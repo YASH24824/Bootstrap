@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <link rel="website icon" href="img8.png" type="png"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/c
+   ss/bootstrap.min.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/c
+ss/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js">
+  </script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.mi
+n.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bun
+dle.min.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+    .bitter {
+      font-family: "Bitter", serif;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
+    }
+
+    body {
+      background-color: black;
+      width: 100%;
+    }
+
+    .div-anime {
+      background-image: url('img71.png');
+      background-size: none;
+      /* Ensure the background image covers the entire element */
+      background-repeat: no-repeat;
+      /* Prevent background image from repeating */
+      width: 100%;
+      /* Occupy full width of the container */
+      height: 100vh;
+      /* Set height to full viewport height */
+      animation: example 4s;
+      /* Apply animation */
+    }
+
+    @keyframes example {
+
+      0% {
+        background-image: url('loader1.png');
+        transform: scale(1)
+      }
+
+      50% {
+        background-image: url('loader1.png');
+        transform: scaleX(0)
+      }
+
+      100% {
+        background-image: url('img71.png');
+        transform: scaleX(1)
+      }
+
+
+    }
+
+    /* Highlight effect */
+    area:hover {
+      opacity: 0.1;
+      outline: 2px solid black;
+
+
+    }
+
+    area:hover:hover {
+      height: 20px;
+      width: 30px;
+    }
+
+    /* Image styling */
+    .car-image {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+
+
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+    <div class="container">
+      <a class="navbar-brand" href="img7.png"><img class="rounded-pill" width="50" src="img8.png"></a>
+      <a href="#" class="navbar-brand mb-0 h1">
+        <!-- <img class="d-inline-block align-top" src="D:\Individual Project Website\images\main icon\favicon.ico" width="30" height="30">-->
+        <span>Color Cruise </span>
+      </a>
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Categories</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="colors.html">Bumpers</a></li>
+              <li><a class="dropdown-item" href="colors.html">Roof</a></li>
+              <li><a class="dropdown-item" href="colors.html">Grille</a></li>
+              <li><a class="dropdown-item" href="colors.html">Hoods</a></li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#aboutus" class="nav-link">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#aboutus" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="finalsignup.html" class="nav-link">Signup/login</a>
+          </li>
+        </ul>
+      </div>
+      <form action="" class="d-flex">
+        <input type="text" class="form-control me-2">
+        <button type="submit" class="btn btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+            viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+          </svg></button>
+      </form>
+    </div>
+  </nav>
+
+
+
+
+
+
+  <div align="center" class="container-fluid responsive div-anime" style="margin-left:auto; z-index: 1;  ">
+    <!-- <img src="img7.png" height="700px" width="100%" style="z-index: -1;">
+        <div class="div-anime">
+          &nbsp;
+        </div> -->
+    <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </pre>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <h1 class="bitter" style="margin-left: 50px; color: rgb(250, 250, 250);">Cars we shaped</h1><br>
+
+
+
+
+
+  <!-- only for show carousel1  -->
+
+
+  <div class="container-fluid">
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      </div>
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="5.jpg" class="d-inline-block w-100" >
+        </div>
+
+        <div class="carousel-item ">
+          <img src="6.jpg" alt="Los Angeles" class="w-100" >
+        </div>
+
+        <div class="carousel-item ">
+          <img src="7.jpg" alt="Los Angeles" class="w-100">
+        </div>
+
+        <div class="carousel-item ">
+          <img src="8.jpg" alt="Los Angeles" class="w-100">
+        </div>
+
+      </div>
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div><br><br>
+  </div>
+
+
+  <h1 class="bitter" style="text-align: center; color: rgb(216 211 215);">Select the part to be painted.</h1><br>
+
+
+
+
+  <div style="background-image:url('svga.jpg'); height:700 ; width: 100%;">
+
+    <!-- Image with map -->
+    <img class="car-image" src="svga.jpg" usemap="#image-map" alt="Car Body Parts">
+
+    <!-- Image Map -->
+    <map name="image-map">
+      <!-- Your area coordinates here -->
+      <area target="_blank" alt="Front Bumper" title="Fro nt Bumper" href="#"
+        coords="626,550,626,638,659,656,701,668,767,687,821,697,851,696,899,701,974,701,986,679,998,635,1005,586,953,620,874,623,833,613,840,665,808,696,729,676,698,652,692,620,691,597,700,575,679,584,649,575,638,564"
+        shape="poly">
+      <!-- More area elements here --><!-- Image Map Generated by http://www.image-map.net/ -->
+
+      <area target="_blank" alt="Front Bumper" title="Front Bumper" href="colors.html"
+        coords="626,550,626,638,659,656,701,668,767,687,821,697,851,696,899,701,974,701,986,679,998,635,1005,586,953,620,874,623,833,613,840,665,808,696,729,676,698,652,692,620,691,597,700,575,679,584,649,575,638,564"
+        shape="poly">
+      <area target="_blank" alt="Grille" title="Grille" href="colors.html"
+        coords="707,578,700,591,696,607,695,619,696,641,707,658,718,668,728,674,749,675,773,685,791,689,810,691,823,677,834,663,836,647,836,630,831,615,824,601,808,594,784,593,764,594,747,586"
+        shape="poly">
+      <area target="_blank" alt="Back Bumper" title="Back Bumper" href="colors.html"
+        coords="110,410,105,423,105,432,112,443,113,461,114,479,119,461,131,468,141,476,150,479,155,477,166,486,181,486,199,488,224,491,240,492,253,496,258,504,265,507,277,507,299,509,308,505,354,499,362,448,332,439,316,421,300,432,276,432,252,466,189,461,126,452,119,456,150,479"
+        shape="poly">
+      <area target="_blank" alt="Hood" title="Hood" href="colors.html"
+        coords="756,444,746,448,725,463,696,481,659,499,655,516,654,532,665,545,679,563,693,576,710,571,731,571,745,575,756,579,770,583,783,585,796,587,811,588,823,592,836,603,842,609,853,611,857,602,874,598,905,587,930,585,957,576,967,567,983,553,997,534,1006,521,1017,505,1025,485,1020,471,900,468,800,450,769,445"
+        shape="poly">
+      <area target="_blank" alt="Front Fender" title="Front Fender" href="colors.html"
+        coords="961,575,977,572,989,572,1003,580,1005,588,1014,580,1018,572,1021,564,1027,560,1040,564,1033,550,1033,539,1029,519,1027,506,1023,493"
+        shape="poly">
+      <area target="_blank" alt="Door" title="Door" href="colors.html"
+        coords="1033,485,1031,510,1036,533,1037,541,1038,557,1044,577,1048,589,1051,594,1059,586,1068,570,1076,559,1093,544,1098,540,1109,535,1115,505,1117,486,1124,469,1130,456,1128,443,1127,433,1119,410,1119,403,1112,396,1093,419,1081,431,1089,433,1103,441,1106,451,1102,460,1089,464,1077,467,1066,468,1058,469"
+        shape="poly">
+      <area target="_blank" alt="Roof" title="Roof" href="colors.html"
+        coords="828,353,850,358,866,364,879,364,934,368,977,372,1000,374,1028,376,1036,362,1041,346,1053,339,1065,328,1075,324,1089,322,1074,318,1053,313,1038,313,1018,311,1003,309,994,309,978,308,966,307,945,309,930,310,917,313,894,318,868,326,848,334,837,346"
+        shape="poly">
+      <area target="_blank" alt="Mirror" title="Mirror" href="colors.html"
+        coords="1037,471,1041,459,1046,448,1049,439,1061,438,1071,434,1082,434,1091,438,1096,443,1099,450,1101,459,1093,462,1074,466,1064,466,1057,468"
+        shape="poly">
+      <area target="_blank" alt="Mirror" title="Mirror" href="colors.html"
+        coords="752,426,740,424,736,414,732,406,739,403,751,402,762,413,759,425" shape="poly">
+      <area target="_blank" alt="Back Fender" title="Back Fender" href="colors.html"
+        coords="1111,393,1118,405,1127,422,1127,436,1130,451,1137,451,1141,443,1149,443,1144,432,1144,416,1139,402,1140,389,1135,382,1122,362,1116,364,1115,378"
+        shape="poly">
+      <area target="_blank" alt="Wheel" title="Wheel" href="colors.html"
+        coords="1014,599,1023,592,1029,594,1039,604,1042,619,1042,627,1042,643,1041,658,1034,667,1032,674,1026,687,1010,699,1000,698,991,690,990,680,991,667,994,649,1003,623,1007,610,1009,609"
+        shape="poly">
+      <area target="_blank" alt="wheel" title="wheel" href="colors.html"
+        coords="1133,456,1127,474,1122,492,1122,519,1125,541,1133,544,1139,530,1145,515,1145,502,1144,483,1144,459"
+        shape="poly">
+      <area target="_blank" alt="Back Fender" title="Back Fender" href="colors.html"
+        coords="321,421,324,426,331,432,334,437,343,439,357,446,366,442,376,432,381,425,388,421,399,416,411,411,408,404,397,397,392,387,382,377,370,375,354,375,344,376,330,376,317,375,307,398,328,398"
+        shape="poly">
+      <area target="_blank" alt="Door" title="Door" href="colors.html"
+        coords="382,370,385,378,394,387,398,396,407,398,412,406,413,418,418,429,427,442,427,458,430,473,445,464,459,463,469,458,477,452,486,445,503,442,523,431,530,427,543,427,544,417,541,409,543,397,545,383,544,374,543,364,538,349,533,343,525,343,510,335,487,343,453,351"
+        shape="poly">
+      <area target="_blank" alt="Front Fender" title="Front Fender" href="colors.html"
+        coords="562,420,546,425,566,410,566,399,566,387,566,375,570,362,576,353,586,341,593,349,597,338,586,333,579,329,562,329,551,331,543,334,533,339,547,422"
+        shape="poly">
+      <area target="_blank" alt="Wheel" title="Wheel" href="colors.html"
+        coords="380,492,380,503,390,509,398,510,409,508,419,489,420,481,420,471,420,457,420,450,416,444,412,436,402,437,397,442,392,448,386,451,383,458,382,465,376,479"
+        shape="poly">
+      <area target="_blank" alt="Wheel" title="Wheel" href="colors.html"
+        coords="567,412,571,422,581,423,592,418,599,406,601,393,601,380,595,369,585,373,575,375,570,385,568,395,566,404"
+        shape="poly">
+      <area target="_blank" alt="Roof" title="Roof" href="colors.html"
+        coords="171,319,176,320,186,322,194,320,208,326,229,324,247,326,278,330,296,337,309,325,321,319,347,306,370,298,399,288,427,287,451,284,409,277,377,277,347,277,329,277,313,276,298,279,287,279,264,284,247,287,233,291,213,295,190,307"
+        shape="poly">
+      <area target="_blank" alt="Mirror" title="Mirror" href="colors.html"
+        coords="505,329,513,334,523,336,533,334,531,323,524,323,514,323" shape="poly">
+      <area target="_blank" alt="Trunk" title="Trunk" href="colors.html"
+        coords="118,409,119,432,127,444,136,448,147,454,156,456,172,458,197,459,212,461,237,466,253,460,263,447,275,432,262,429,253,431,246,428,240,420,237,413,244,411,257,410,277,409,283,400,272,397,253,400,236,395,220,394,201,392,184,386,173,386,160,385,141,384,123,383,118,393,125,400,134,404,144,409,141,415"
+        shape="poly">
+      <area target="_blank" alt="Door Post" title="Door Post" href="colors.html"
+        coords="381,360,374,352,373,346,369,330,366,320,381,311,381,321,384,331,387,342,396,354,404,361,395,366,381,367"
+        shape="poly">
+      <area target="_blank" alt="Door Post" title="Door Post" href="colors.html"
+        coords="441,334,446,350,434,322,426,313,420,309,450,348,462,346,449,316,446,310,440,302,434,300,425,301"
+        shape="poly">
+      <area target="_blank" alt="Door Post" title="Door Post" href="colors.html"
+        coords="309,391,304,393,291,391,284,378,293,357,301,336,313,324,333,316,354,312,366,301,385,299,399,292,412,291,423,292,437,291,451,290,463,293,474,296,487,303,505,312,499,317,506,324,479,310,461,304,448,302,416,305,374,316,363,322,334,336,304,401"
+        shape="poly">
+      <area target="_blank" alt="Door Post" title="Door Post" href="colors.html"
+        coords="1025,468,1032,466,1038,451,1039,436,1039,422,1040,409,1042,396,1042,380,1047,372,1051,366,1060,358,1069,350,1076,345,1089,342,1098,336,1105,340,1112,349,1114,342,1106,331,1095,323,1081,324,1069,329,1055,334,1051,340,1044,348,1040,356,1032,372,1029,385,1027,393,1026,409,1025,420,1021,434,1020,451"
+        shape="poly">
+      <area target="" alt="" title="" href="" coords="" shape="poly">
+    </map>
+    </map>
+
+  </div>
+
+
+  <div id="aboutus" class="table-responsive table-dark ">
+
+    <div style="margin-left: 50px;">
+      <h1>Colorcruise</h1>
+    </div>
+    <table class="table  table-borderless margin-left:50px ">
+
+      <tr>
+        <td></td>
+        <td style=" font-size: 25px; color: aliceblue;">Industries</td>
+        <td style=" font-size: 25px; color: aliceblue;">Quick Links</td>
+        <td style=" font-size: 25px; color: aliceblue;">Stay Connected </td>
+
+      </tr>
+
+      <tr>
+
+        <td></td>
+        <td><a href="#" style=" text-decoration: none;font-size: 20px; color: aliceblue;">Automotive Manufacturing</a>
+        </td>
+        <td><a href="#" style=" text-decoration: none; font-size: 20px; color: aliceblue;">Reviews</a></td>
+        <td style="font-size: 20px; color: aliceblue;">
+          <h1 style="font-size: 25px; color: aliceblue;">Office Location</h1>
+        </td>
+
+      </tr>
+      <tr>
+
+        <td></td>
+        <td><a href="#" style="text-decoration: none; font-size: 20px; color: aliceblue;">Chemical Suppliers</a></td>
+        <td><a href="#" style="text-decoration: none; font-size: 20px; color: aliceblue;">Terms & Condition</a></td>
+        <td rowspan="3" style="font-size: 20px; color: aliceblue;">A-22003/Savvy strata<br>Near new L.J.
+          University<br>Ahemdabad-40002</td>
+      </tr>
+
+
+
+      <tr>
+        <td></td>
+        <td><a href="#" style="text-decoration: none; font-size: 20px; color: aliceblue;">Paint Application</a></td>
+        <td><a href="#" style="text-decoration: none; font-size: 20px; color: aliceblue;">Site Map</a></td>
+
+
+      </tr>
+
+      <tr>
+        <td></td>
+        <td></td>
+
+        <td style="font-size: 20px; color: aliceblue;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="white" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <path
+              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-instagram"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-facebook"
+            viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+          </svg>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td class="bitter text-light" align="center" colspan="4">&#169 All Rights are reserved in 2000 2001 </td>
+      </tr>
+
+      <tr>
+        <td class="bitter text-light" align="center" colspan="4">Designed by YASH </td>
+      </tr>
+
+    </table>
+  </div>
+
+
+
+  
+</body>
+
+</html>

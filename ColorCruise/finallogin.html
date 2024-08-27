@@ -1,0 +1,120 @@
+<html> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<head> 
+    
+
+            <style>
+                 body{
+            background-image: url('asking.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+
+
+    
+        .login-box {
+            width: 300px; /* Adjust the width of the login box */
+            margin: 0 auto; /* Center the box horizontally */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Drop shadow effect */
+        }
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-box input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        } 
+       
+    </style>
+<script type="text/javascript"> 
+
+function fun(demo) 
+{ 
+val=demo.t1.value; 
+if(val.length==0) 
+{ 
+alert("Enter something"); 
+return false; 
+} 
+alert(val);
+
+} 
+
+
+function fun() 
+{ 
+    
+pat=/^_|^@|^\d/; 
+uname = document.getElementById("t1").value; 
+pass = document.getElementById("p1").value; 
+data_display = document.getElementById("test"); 
+data_display.style.color = "red"; 
+
+//v==" " || u==" " 
+if(uname.length==0) 
+{ 
+    alert("Enter Your name properly"); 
+return false; 
+} 
+else if(pass.length==0){
+    alert("Enter Your name password peoperli"); 
+return false; 
+}
+else if(pat.test(uname)) 
+{ 
+    alert("Enter valid username (Should not start with _, @ and any number");
+} 
+else if(pass.length<8 || pass.length>12) 
+{ 
+   alert("Password length must be between 8 and 12" )
+} 
+else{ 
+   alert("you have succesfully Login")
+windows.location.href="mainpage.html"
+ 
+} 
+} 
+</script> 
+</head> 
+<body> 
+<div class="table-responsive  ">
+    <div style=" height:500px; width: 1250px;;"> 
+        <form onsubmit="window.open('mainpage.html')">
+    <table class="table login-box" height="300px" width="500px" align="center" style=" margin: left 200px;  margin-top:100px; " ; >
+        <thead><th align="left" ><h1  >Login</h1></th></thead>
+        <tr>
+            <td>NAME</td>
+        </tr>
+        <tr>
+            <td><input type="text" id="t1"/></td>
+        </tr>
+        <tr>
+            <td >PASSWORD</td>
+        </tr>
+        <tr>
+            <td><input type="password" id="p1"/></td>
+        </tr>
+        <tr>
+            <td align="center" ><input type="submit" onclick="fun()" ><h1 id="test"></h1> </td>
+        </tr>
+        <tr>
+            <td> <a href="mainpage.html" style="text-decoration: none;"></a></td></tr>
+    </table>
+</form>
+</div>
+</div>
+
+</body> 
+</html>
